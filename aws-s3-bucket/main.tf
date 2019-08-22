@@ -43,6 +43,6 @@ resource "aws_s3_bucket" "bucket" {
   }
 }
 
-output "sse_algorithm" {
+/*output "sse_algorithm" {
   value = aws_s3_bucket.bucket.server_side_encryption_configuration[0].rule[0].apply_server_side_encryption_by_default[0].sse_algorithm
-}
+}*/
