@@ -16,7 +16,7 @@ find_resources_from_plan = func(type) {
   # Iterate over all modules in the tfplan import
   for tfplan.module_paths as path {
     # Iterate over the named resources of desired type in the module
-    for tfplan.module(path).resources[type] else {} as name, instances {
+   for tfplan.module(path).resources[type] else {} as name, instances {
       # Iterate over resource instances
       for instances as index, r {
 
@@ -58,7 +58,6 @@ validate_private_acl_and_kms_encryption = func() {
 
     # Skip resources that are being destroyed
     # to avoid unnecessary policy violations.
-    # Used to be: if length(r.diff) == 0
     if r.destroy {
       print("Skipping resource", address, "that is being destroyed.")
       continue

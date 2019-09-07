@@ -7,7 +7,7 @@ The full abstract is [here](https://hashiconf.hashicorp.com/schedule/testing-ter
 The [gcp-compute-instance](./gcp-compute-instance) directory contains some simple Terraform 0.12 code that creates two Google Cloud Platform (GCP) compute instances.
 
 ## AWS S3 Bucket
-The [aws-s3-bucket](./aws-s3-bucket)directory contains some simple Terraform 0.12 code that creates a single S3 bucket that has the "private" canned ACL and is encrypted by a KMS key.
+The [aws-s3-bucket](./aws-s3-bucket) directory contains some simple Terraform 0.12 code that creates a single S3 bucket that has the "private" canned ACL and is encrypted by a KMS key.
 
 ## Sentinel Policies, Test Cases, and Mocks
 The [sentinel](./sentinel) directory contains two Sentinel policies, [restrict-gce-machine-type.sentinel](./gcp-compute-instance/restrict-gce-machine-type.sentinel) and [require-private-acl-and-kms-for-s3-buckets.sentinel](./aws-s3-bucket/require-private-acl-and-kms-for-s3-buckets.sentinel), along with Sentinel test cases and mocks that allow them to be tested with the Sentinel Simulator.
