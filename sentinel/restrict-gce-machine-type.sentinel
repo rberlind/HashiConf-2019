@@ -92,6 +92,5 @@ allowed_types = [
 
 # Main rule that calls the validation function and evaluates results
 main = rule {
-  validate_attribute_in_list("google_compute_instance", "machine_type",
-                             allowed_types)
+  validate_attribute_in_list("google_compute_instance", "machine_type", allowed_types)
 }
