@@ -483,7 +483,7 @@ variables = {
 	"image":           "debian-cloud/debian-9",
 	"instance_name_1": "demo-1",
 	"instance_name_2": "demo-2",
-	"machine_type_1":  "n1-standard-1",
+	"machine_type_1":  "n1-standard-8",
 	"machine_type_2":  "n1-standard-2",
 }
 
